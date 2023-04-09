@@ -8,4 +8,47 @@ html(lang="en")
     body 
         .wrapper 
             include ../../components/allpages/mainpage/header/header.pug
-            
+            main.main 
+                .main__present 
+                    .present 
+                        .present__container 
+                            .present__body 
+                                .present__content 
+                                    .present__title Star Wars 
+                                    .present__subtitle Battlefront II 
+                                    .present__buttons 
+                                        button.present__trailer(type='submit') Watch Trailer
+                                        button.present__games(type='submit') Explore Games 
+                .main__entertainment 
+                    .entertainment 
+                        .entertainment__container 
+                            .entertainment__body 
+                                .entertainment__ball 
+                                    img(src=require('../../img/svg/ball.png'))
+                                .entertainment__title The best value
+                                .entertainment__subtitle in games and entertainment
+                                .entertainment__row 
+                                    .entertainment__column 
+                                        .entertainment__content 
+                                            .entertainment__picture 
+                                                img(src=require('../../img/svg/gameplay1.png'))
+                                            .entertainment__epigraph XBOX ONE X
+                                            .entertainment__text Faster Processing
+                                            .entertainment__text(class='entertainment__text-last') Smoother Gameplay
+                                            button.entertainment__button(type='submit') Explore Consoles & Accessories
+                                    .entertainment__column(class='entertainment__column2') 
+                                        .entertainment__content 
+                                            .entertainment__picture2 
+                                                img(src=require('../../img/svg/gameplay2.png'))
+                                            .entertainment__epigraph mixer Streaming
+                                            .entertainment__text The Next Generation
+                                            .entertainment__text(class='entertainment__text-last') Of Life Game Streaming
+                                            button.entertainment__button(type='submit') Start Watching mixer 
+                                    .entertainment__column(class='entertainment__column3') 
+                                        .entertainment__content 
+                                            .entertainment__picture3 
+                                                img(src=require('../../img/svg/gameplay3.png'))
+                                            .entertainment__epigraph Free Games Every Month
+                                            .entertainment__text Get up to $700 in
+                                            .entertainment__text(class='entertainment__text-last') free games
+                                            button.entertainment__button(type='submit') Get Free Games 
