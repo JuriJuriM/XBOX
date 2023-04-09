@@ -7,22 +7,5 @@ html(lang="en")
         title XBOX
     body 
         .wrapper 
-            header.header 
-                .header 
-                    .header__container 
-                        .header__body 
-                            a.header__logo(href='#') 
-                                img(src=require("../../img/svg/logo.png") alt='Logo') 
-                            .header__burger 
-                                span.header__span 
-                            nav.header__menu 
-                                ul.header__list 
-                                    li 
-                                        a.header__link(class='header__link-first' href='#') Games
-                                    li 
-                                        a.header__link(class='header__link-second' href='#') Consoles
-                                    li 
-                                        a.header__link(class='header__link-third' href='#') Community 
-                                    input.header__search(type='text' name='search' value='Search') 
-                                    li(class='header__li')
-                                        a.header__link(class='header__link-last' href='#') My XBOX
+            include ../../components/allpages/mainpage/header/header.pug
+            

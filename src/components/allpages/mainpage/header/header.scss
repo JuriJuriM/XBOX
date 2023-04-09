@@ -1,0 +1,172 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  &__container {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  &__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+  }
+  &__logo {
+    position: relative;
+    z-index: 3;
+  }
+  &__logo img {
+    max-width: 100%;
+    display: block;
+  }
+  &__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+  }
+  &__list li {
+    padding-top: 10px;
+  }
+  &__link {
+    margin-left: 35px;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &__link-first {
+    color: #ffffff;
+  }
+  &__link-last::before {
+    //content: url("../../img/svg/manShape.png");
+    content: url("../../../../img/svg/manShape.png");
+    padding-right: 5px;
+  }
+  &__link-first::after,
+  &__link-second::after,
+  &__link-last::after {
+    //content: url("../../img/svg/checkmark.png");
+    content: url("../../../../img/svg/checkmark.png");
+    padding-left: 8px;
+  }
+  &__search {
+    width: 209.8px;
+    height: 38px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-left: 37px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #435766;
+    padding-left: 15px;
+  }
+  &__li {
+    margin-top: -6px;
+  }
+  &__burger {
+    display: none;
+  }
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #373a3c;
+  z-index: 2;
+}
+
+@media (max-width: 880px) {
+  .header__link {
+    margin-left: 15px;
+  }
+  .header__search {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header {
+    &__body {
+      height: 50px;
+    }
+    &__logo {
+      flex: 0 0 80px;
+    }
+    &__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 3;
+    }
+    &__burger.active::before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+    &__burger.active::after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+    &__burger.active span {
+      transform: scale(0);
+    }
+    &__burger span {
+      position: absolute;
+      background-color: #ffffff;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+    }
+    &__burger::before,
+    &__burger::after {
+      content: "";
+      background-color: #ffffff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+    &__burger::before {
+      top: 0;
+    }
+    &__burger::after {
+      bottom: 0;
+    }
+    &__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(43, 43, 108);
+      padding: 70px 0 0 0;
+      transition: all 0.3s ease 0s;
+      overflow: auto;
+    }
+    &__menu.active {
+      top: 0;
+    }
+    &__list {
+      display: block;
+    }
+    &__list li,
+    &__search {
+      margin-bottom: 20px;
+    }
+  }
+}
