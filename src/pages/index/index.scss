@@ -188,7 +188,7 @@ html {
   &__column2 {
     width: 352px;
     height: 462px;
-    margin-bottom: 251px;
+    margin-bottom: 58px;
   }
   &__column4 {
     width: 282px;
@@ -231,5 +231,22 @@ html {
   }
   &__button4 {
     width: 245px;
+  }
+  &__end {
+    display: flex;
+    justify-content: center;
+  }
+  &__button-main {
+    height: 53px;
+    width: 207px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+    font-family: "HelveticaNeue";
+    font-size: 21px;
+    line-height: 21px;
+    color: #ffffff;
+    padding-top: 11px;
+    padding-left: 47px;
+    margin-bottom: 140px;
   }
 }
