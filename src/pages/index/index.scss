@@ -5,6 +5,10 @@ html {
   font-family: sans-serif;
   height: 100%;
   font-style: normal;
+}
+
+.wrapper {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -20,7 +24,7 @@ html {
 .present {
   max-width: 100%;
   margin-top: 60px;
-  background: url(../../img/svg/Starcombat.png);
+  background: url("../../img/svg/Starcombat.png");
   &__container {
     max-width: 854px;
     max-height: 644px;
@@ -102,6 +106,7 @@ html {
     background: #ffffff;
     border: 1px solid #8dd83d;
     border-radius: 4px;
+    margin-bottom: 162px;
   }
   &__picture {
     margin-bottom: 16px;
@@ -141,5 +146,90 @@ html {
     line-height: 21px;
     color: #ffffff;
     margin-left: 21px;
+  }
+  &__content {
+    margin-bottom: 259px;
+  }
+}
+
+.store {
+  max-width: 100%;
+  background: url("../../img/svg/story.png") center;
+  &__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  &__title {
+    font-family: "HelveticaNeue";
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__picture {
+    margin-bottom: 22px;
+  }
+  &__column {
+    height: 420px;
+    width: 320px;
+    border-radius: 4px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    border: 1px solid #8dd83d;
+  }
+  &__column2 {
+    width: 352px;
+    height: 462px;
+    margin-bottom: 251px;
+  }
+  &__column4 {
+    width: 282px;
+  }
+  &__epigraph {
+    font-family: "HelveticaNeue";
+    font-size: 18px;
+    line-height: 21px;
+    color: #435766;
+    padding-left: 21px;
+  }
+  &__epigraph1 {
+    margin-bottom: 16px;
+  }
+  &__epigraph2,
+  &__epigraph3,
+  &__epigraph4 {
+    margin-bottom: 109px;
+  }
+  &__text {
+    font-family: "HelveticaNeue";
+    font-size: 21px;
+    line-height: 25px;
+    color: #435766;
+    padding-left: 21px;
+  }
+  &__text2 {
+    margin-bottom: 43px;
+  }
+  &__button {
+    height: 60px;
+    width: 278px;
+    border-radius: 4px;
+    background: #8dd83d;
+    font-family: "HelveticaNeue";
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    margin-left: 21px;
+  }
+  &__button4 {
+    width: 245px;
   }
 }
