@@ -25,6 +25,60 @@ html {
 
 // Finish main styles
 
+// Start about styles
+
+.about {
+  margin-top: 60px;
+  flex: 1 1 auto;
+}
+
+.call {
+  background: url("../../img/svg/Call.png") center;
+  &__container {
+    max-width: 856px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__title {
+    margin-top: 109px;
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    margin-bottom: 139px;
+  }
+  &__buttons {
+    margin-bottom: 204px;
+  }
+  &__order {
+    height: 38px;
+    width: 136px;
+    border-radius: 4px;
+    background: #8dd83d;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+  &__more {
+    margin-left: 13px;
+    height: 38px;
+    width: 148px;
+    border-radius: 4px;
+    background: #8dd83d;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+}
+
+// Finish about styles
+
 // Start footer styles
 
 @import "../../components/allpages/mainpage/footer/footer.scss";
