@@ -24,3 +24,60 @@ html {
 @import "../../components/allpages/mainpage/main/main.scss";
 
 // Finish main styles
+
+// Start footer styles
+
+.footer {
+  background: #373a3c;
+  &__container {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 58px;
+    margin-bottom: 49px;
+  }
+  &__title {
+    font-family: "HelveticaNeue";
+    font-size: 18px;
+    line-height: 21px;
+    color: #7dd42f;
+    margin-bottom: 34px;
+  }
+  &__list li {
+    margin-bottom: 29px;
+  }
+  &__link {
+    font-family: "HelveticaNeue";
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+  &__messengers {
+    display: flex;
+  }
+  &__messengers li {
+    margin-right: 20px;
+  }
+  &__line {
+    margin-bottom: 19px;
+    margin-left: -65px;
+  }
+  &__end {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__language,
+  &__sign {
+    font-family: "HelveticaNeue";
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    margin-bottom: 38px;
+  }
+}
