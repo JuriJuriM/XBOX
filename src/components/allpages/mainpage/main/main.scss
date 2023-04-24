@@ -98,6 +98,11 @@
     margin-left: 59px;
     margin-bottom: 48px;
   }
+  &__picture img,
+  &__picture2 img,
+  &__picture3 img {
+    max-width: 100%;
+  }
   &__epigraph {
     font-size: 18px;
     line-height: 21px;
