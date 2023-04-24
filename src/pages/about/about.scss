@@ -1,0 +1,32 @@
+@import "../../styles/null.scss";
+
+body,
+html {
+  font-family: sans-serif;
+  height: 100%;
+  font-style: normal;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// Start header styles
+
+@import "../../components/allpages/aboutpage/header/header.scss";
+
+// Finish header styles
+
+// Start about styles
+
+@import "../../components/allpages/aboutpage/about/about.scss";
+
+// Finish about styles
+
+// Start footer styles
+
+@import "../../components/allpages/aboutpage/footer/footer.scss";
+
+// Finish footer styles
